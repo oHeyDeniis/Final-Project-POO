@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Regras - Sistema de Apostas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            line-height: 1.6
+        }
+
+        h1 {
+            color: #2b7
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05)
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Regras do Sistema de Apostas</h1>
+    <div class="card">
+        <p>Bem-vindo ao modo de apostas! Leia atentamente:</p>
+        <ul>
+            <li><strong>Aposta inicial:</strong> 50 pontos (débito imediato ao iniciar a aposta).</li>
+            <li><strong>Rodada:</strong> Até 10 perguntas.</li>
+            <li><strong>Recuperação (checkpoint 1):</strong> Ao atingir <strong>5 acertos</strong>, você garante pelo
+                menos o valor de sua aposta inicial (50 pontos).</li>
+            <li><strong>Checkpoint 2:</strong> Ao atingir <strong>7 acertos</strong>, a garantia sobe para o valor
+                acumulado naquele momento.</li>
+            <li><strong>Perda:</strong> Se você errar uma pergunta <em>antes</em> de atingir 5 acertos, perde toda a
+                aposta.</li>
+            <li><strong>Erros após checkpoints:</strong> Se errar após 5 acertos, você mantém a garantia (o valor do
+                checkpoint) e sai com esse valor.</li>
+            <li><strong>Multiplicador:</strong> A partir do <strong>6º acerto</strong>, a aposta dobra a cada novo
+                acerto (6,7,8...).</li>
+            <li><strong>Opção de parada:</strong> A partir do 5º acerto o sistema perguntará se você deseja
+                <em>parar</em> e garantir o valor atual.</li>
+            <li><strong>Salvar pontos:</strong> Ao final da aposta você pode optar por salvar o saldo no banco de dados
+                para usar em outras partidas.</li>
+        </ul>
+        <p>Como executar o jogo (exemplo):</p>
+        <pre><code>javac *.java
+java -cp ".;sqlite-jdbc-3.42.0.0.jar" PerguntaResposta</code></pre>
+    </div>
+</body>
+
+</html>
