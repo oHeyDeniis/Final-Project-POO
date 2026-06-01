@@ -136,7 +136,7 @@ public class Ranking {
     public void exibir(String nomeJogo) {
         List<Pontuacao> filtradas = buscarPorJogo(nomeJogo);
 
-        Console.titulo("RANKING — " + nomeJogo.toUpperCase());
+        Console.titulo("RANKING - " + nomeJogo.toUpperCase());
 
         if (filtradas.isEmpty()) {
             System.out.println("\n  Nenhuma pontuação registrada para este jogo ainda.\n");

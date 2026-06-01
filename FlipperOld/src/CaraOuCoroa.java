@@ -4,11 +4,11 @@ import java.util.Random;
  * CaraOuCoroa — Jogo de sorte entre jogador e máquina.
  *
  * Regras:
- *  - O jogador escolhe CARA ou COROA.
- *  - A máquina assume automaticamente o lado OPOSTO.
- *  - O sistema sorteia o resultado da moeda.
- *  - Quem acertou vence a rodada.
- *  - São jogadas 5 rodadas. Pontuação = 100 pts por vitória.
+ * - O jogador escolhe CARA ou COROA.
+ * - A máquina assume automaticamente o lado OPOSTO.
+ * - O sistema sorteia o resultado da moeda.
+ * - Quem acertou vence a rodada.
+ * - São jogadas 5 rodadas. Pontuação = 100 pts por vitória.
  */
 public class CaraOuCoroa extends Jogo {
 
@@ -17,8 +17,8 @@ public class CaraOuCoroa extends Jogo {
     private static final int PONTOS_POR_VITORIA = 100;
 
     // ─── Atributos da partida ─────────────────────────────
-    private String escolhaJogador;  // "cara" ou "coroa"
-    private String escolhaMaquina;  // oposto do jogador
+    private String escolhaJogador; // "cara" ou "coroa"
+    private String escolhaMaquina; // oposto do jogador
     private int rodadasJogadas;
     private int vitoriasJogador;
 

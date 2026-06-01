@@ -77,14 +77,14 @@ public class Fliperama {
      */
     private void exibirBoasVindas() {
         Console.linha();
-        System.out.println("    ______ _ _                  ___  _     _ ");
-        System.out.println("   |  ____| (_)                / _ \\| |   | |");
-        System.out.println("   | |__  | |_ _ __  _ __  ___| | | | | __| |");
-        System.out.println("   |  __| | | | '_ \\| '_ \\/ _ \\ | | | |/ _` |");
-        System.out.println("   | |    | | | |_) | |_) |  __/ |_| | | (_| |");
-        System.out.println("   |_|    |_|_| .__/| .__/ \\___|\\___/|_|\\__,_|");
-        System.out.println("              | |   | |                        ");
-        System.out.println("              |_|   |_|  Fliperama Digital     ");
+        System.out.println("  ______ _                          ____  _     _ ");
+        System.out.println(" |  ____| (_)                      / __ \\| |   | |");
+        System.out.println(" | |__  | |_ _ __  _ __   ___ _ __| |  | | | __| |");
+        System.out.println(" |  __| | | | '_ \\| '_ \\ / _ \\ '__| |  | | |/ _` |");
+        System.out.println(" | |    | | | |_) | |_) |  __/ |  | |__| | | (_| |");
+        System.out.println(" |_|    |_|_| .__/| .__/ \\___|_|   \\____/|_|\\__,_|");
+        System.out.println("            | |   | |                             ");
+        System.out.println("            |_|   |_|    Fliperama Digital         ");                           
         Console.linha();
         System.out.println("  Bem-vindo ao FlipperOld!");
         System.out.println("  Os clássicos de sempre, no seu terminal.\n");
@@ -96,7 +96,7 @@ public class Fliperama {
      * Exibe o menu principal.
      */
     private void exibirMenuPrincipal() {
-        Console.titulo("FLIPPEROLD — MENU PRINCIPAL");
+        Console.titulo("FLIPPEROLD - MENU PRINCIPAL");
 
         System.out.println("  1. Jogos");
         System.out.println("  2. Rankings");
@@ -191,7 +191,7 @@ public class Fliperama {
             System.out.println("  0. Voltar");
             Console.linhaSub();
 
-            opcao = menu.capturarOpcao("  Escolha o jogo: ");
+            opcao = menu.capturarOpcao("  Escolha o Ranking que deseja ver: ");
 
             if (opcao >= 1 && opcao <= jogos.size()) {
                 Console.limpar();
